@@ -1,27 +1,26 @@
+*{
+    box-sizing: border-box;
+    
+}
+
 body { margin: 0; 
     padding: 0; 
-    background: url('../images/beerback.jpg') no-repeat;
-    background-size: cover;
 }
 
 #wrapper {display: flex;}
 
 #map {position: relative; 
-    top: 15px;
-    left: 12.5%;
-    width: 75%; 
+    top: -50px;
+    left: 18%;
+    width: 63%; 
     height: 400px; 
     border: solid;
-    border-radius: 20px;
+    border-color: #2873AD;
 }
 
-h1 {
-    text-align: center;
-    color: white;
-}
 
-h2 {color: blue;}
-p{color: blue;}
+
+p{color: black;}
 
 
 
@@ -32,12 +31,12 @@ p{color: blue;}
 }
 .input{
   text-align: center;
-  margin: 100px auto;
+  margin: 40px auto;
 }
 
 input[type="submit"]{
-  padding: 15px 30px;
-  background: #e7e7e7;
+  padding: 10px;
+  background: #2873AD;
   border: none;
   border-radius: 1px;
   font-family: "Nunito",sans-serif;
@@ -46,27 +45,47 @@ input[type="submit"]{
 }
 
 .input input[type="text"]{
-  width: 600px;
-  height: 40px;
-  padding: 5px 10px;
+  width: 400px;
+  height: 40px; 
   background: #e7e7e7;
   border: none;
   border-radius: 1px;
   font-family: "Nunito",sans-serif;
   font-weight:bold;
-  font-size: 20px;
+  font-size: 21px;
 }
 
 .card{
-  width: 50%;
-  background: #e7e7e7;
-  margin: 50px auto;
+  width: 10%;
+  background: #2873AD;
+  margin: 10px auto;
   border-radius: 2px;
 }
 
 
 .card p{
   text-align: center;
-  margin:40px 0;
+  margin: 20px 0;
   font-size:20px;
+    color: white;
+}
+.padding {
+    padding: 50px
+}
+
+.snyd {
+    width: 100%;
+    z-index: 0;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
